@@ -37,7 +37,7 @@ import kotlin.io.encoding.ExperimentalEncodingApi
 object Network {
 
     // 服务端 baseUrl
-    private const val baseUrl = "https://easywrite.wilinz.com/"
+    private const val baseUrl = "http://132.145.93.47:10010/"
     //    private const val baseUrl = "http://192.168.1.5:10010/"
 
     //    val openaiUrl = "${baseUrl}openai/v1/"
@@ -45,7 +45,7 @@ object Network {
     private const val openaiUrl = "https://c-z0-api-01.hash070.com"
 
     // 必选
-    private val openaiKey = kotlin.runCatching { Base64.decode("api key base64").toString(Charsets.UTF_8) }.getOrElse { "" } // TODO
+    private val openaiKey = kotlin.runCatching { Base64.decode("c2stazNOeFFudGlRZmdLMlc1Z1N1TzlkZmZkcW94Z3RIVDNpdkpkaVJFS1drYThRSmVU").toString(Charsets.UTF_8) }.getOrElse { "" } // TODO
 
     // 可选
     private const val textinAppId = ""
