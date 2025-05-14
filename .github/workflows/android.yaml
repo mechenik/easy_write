@@ -38,7 +38,7 @@ jobs:
                 apksigner sign --v4-signing-enabled false --ks /tmp/.android_key/android_key.jks --ks-pass env:ANDROID_KS_PASS --ks-key-alias ${{ secrets.ANDROID_KEY_ALIAS }} ${file}
               done
       - name: Upload apk to artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: app-release.apk
           path: app/build/outputs/apk/release/app-release-unsigned.apk
